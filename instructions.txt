@@ -1,0 +1,13 @@
+* enter the command:
+	sudo nano launcher.sh
+* and type the following commands:
+	#!/bin/sh
+	cd /
+	cd /home/sashreek/PycharmProjects/GCI
+	xhost +
+	python3 <name of python script> &
+* then run: 
+	sudo chmod +x <path to script>
+* open the startup applications app an type the following in the command field:
+	sh <path to shell script>
+* click on ok and reboot the system :)
