@@ -57,7 +57,7 @@ def u_command(textbox,textbox1,l,l1,s):
     s.place_forget()
 
 def open_git():
-    l= Label(root, text='user id / email :', font=26)
+    l= Label(root, text='enter github user ID :', font=26)
     l.place(x=165, y=345)
     textbox = Entry(root)
     textbox.place(x=165,y=365)
@@ -68,7 +68,7 @@ def open_git():
     s = Button(root, text="Submit",command = lambda: s_command(textbox,textbox1,l,l1,s))
     s.place(x=210, y=445)
 def open_twitter():
-    l = Label(root, text='user id / email :', font=26)
+    l = Label(root, text='enter twitter handle/email ID :', font=26)
     l.place(x=165, y=345)
     textbox = Entry(root)
     textbox.place(x=165, y=365)
@@ -79,7 +79,7 @@ def open_twitter():
     t = Button(root, text="Submit", command=lambda: t_command(textbox, textbox1, l, l1, t))
     t.place(x=210, y=445)
 def open_insta():
-    l = Label(root, text='user id / email :', font=26)
+    l = Label(root, text='enter instagram handle :', font=26)
     l.place(x=165, y=345)
     textbox = Entry(root)
     textbox.place(x=165, y=365)
@@ -95,6 +95,7 @@ if __name__ == "__main__":
     root = Tk()
     root.geometry("495x495+700+300")
     root.resizable(False, False)
+    root.title("Task Automation")
     Label(root, text="__________________________________________________________________________").place(x=0,y=25)
     l = Label(root, text='open GitHub and login to your mainpage ',font=26).place(x=90,y=50)
     s =Button(root, text = "Start",command = open_git)
